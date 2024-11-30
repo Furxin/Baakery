@@ -1,0 +1,191 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url('../img/homebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #90AACB;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #FEF1E6;
+  font-family: 'Pacifico', cursive; /* Elegant, cute logo font */
+  font-weight: normal;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Adds spacing between navigation items */
+}
+
+.topnav li {
+  margin: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #FEF1E6;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Clean, modern font for navigation links */
+  text-transform: uppercase; /* Makes the links more visible and bold */
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.topnav a.active,
+.topnav a:hover {
+  color: #F9D5A7;
+  background-color: #FFB085; /* Adds a soft highlight effect */
+  border-radius: 5px;
+}
+
+/* Right Alignment for Last Item */
+.topnav .right {
+  margin-left: auto;
+}
+
+/* Main Content Section */
+.content {
+  padding: 20px;
+  text-align: center;
+  background-color: #FFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .topnav li {
+    margin: 5px 0;
+  }
+}
+
+.introduction {
+  padding-top: 2%;
+  padding-left: 2%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;  
+  align-items: flex-start;
+  gap: 550px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+.img1 {
+  border: 12px outset #90AACB;
+  border-radius: 50%;
+  width: 600px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.img1:hover {
+  box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+}
+
+.contact {
+  background-color: white;
+  border: 5px solid #90AACB;
+  padding: 15px;
+  font-family: 'Brush Script MT';
+  font-size: 20px;
+  width: 600px;
+  height: auto;
+  border-radius: 20%;
+  height: 600px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact:hover {
+  box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 34px 1px rgba(0,0,0,0.75);
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.socialmedia a {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 10px;
+  text-decoration: none; 
+  color: #000; 
+  width: 100%; 
+}
+
+.socialmedia img {
+  width: 50px;
+  height: 50px; 
+}
+
+.socialmedia span {
+  font-size: 1.2em; 
+  font-weight: 600; 
+  color: #333;
+}
+
+.randomtext {
+  background-color: #FAF9F6;
+  border-radius: 50px;
+  padding: 10px; 
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: auto; 
+  width: 550px;
+  height: 150px;
+}
+
+.footer {
+  background-color: #90AACB; 
+  height: 50px; 
+  width: 100%; 
+}
