@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #FEF1E6;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #90AACB;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #FEF1E6;
+  font-family: 'Pacifico', cursive; /* Elegant, cute logo font */
+  font-weight: normal;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Adds spacing between navigation items */
+}
+
+.topnav li {
+  margin: 0;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #FEF1E6;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif; /* Clean, modern font for navigation links */
+  text-transform: uppercase; /* Makes the links more visible and bold */
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.topnav a.active,
+.topnav a:hover {
+  color: #F9D5A7;
+  background-color: #FFB085; /* Adds a soft highlight effect */
+  border-radius: 5px;
+}
+
+/* Right Alignment for Last Item */
+.topnav .right {
+  margin-left: auto;
+}
+
+/* Main Content Section */
+.content {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #FFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .topnav li {
+    margin: 5px 0;
+  }
+}
+
+  .sides{
+    display: flex;
+  }
+
+.leftside {
+  width: 50%;
+  position: relative;
+  height: 100vh;
+}
+
+.leftside img{
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+  border: beige dotted;
+}
+
+.rightside {
+  height: auto;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.rightside h1{
+  padding-left: 30px;
+  text-align: start;
+}
+
+.rightside h2{
+  padding-left: 30px;
+  text-align: start;
+  line-height: -10;
+}
+
+.rightside p {
+  padding-left: 30px;
+  text-align: start;
+}
+
+.Wrapper{
+  position: absolute;
+  right: 0;
+  height: 70px;
+  width: 200px;
+  border: #333 solid;
+  border-radius: 13px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.Wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Wrapper span.num{
+  font-size: 50px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+
+}
+
+#AddToCart {
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(75, 146, 187);
+  color: white;
+  font-size: 3.0em;
+  border: solid rgb(105, 146, 207);
+  cursor: pointer;
+  margin: 100px;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
