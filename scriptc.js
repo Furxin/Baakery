@@ -15,14 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  $(document).ready(function () {
-    $(".contact a").on("click", function (event) {
-      event.preventDefault();
-      const url = $(this).attr("href");
-      if (url) {
-        window.location.href = url;
-      }
-    });
-  });
   
