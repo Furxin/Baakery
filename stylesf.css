@@ -106,8 +106,8 @@ header {
   border-radius: 14px;
   position: absolute;
   right: 0;
-  height: 1000px;
-  width: 1000px;
+  height: 750px;
+  width: 750px;
   object-fit: fill; 
 }
 
